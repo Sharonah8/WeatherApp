@@ -27,3 +27,52 @@ body{
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+.date-container{
+    font-weight: 100;
+}
+
+.date-container .time{
+    font-size: 70px;
+}
+
+.date-container #am-pm{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.date-container .date{
+    font-weight: 30px;
+}
+
+
+
+.place-container{
+    text-align: end;
+}
+
+.place-container .time-zone{
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.place-container .country{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+
+.current-info .others{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 1px solid #eee;
+}
+
+.current-info .others .weather-item{
+    display: flex;
+    justify-content: space-between;
+}
