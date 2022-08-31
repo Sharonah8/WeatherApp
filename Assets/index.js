@@ -37,5 +37,8 @@ function getWeatherData() {
         console.log(success);
 
         let { latitude, longitute } = success.coords;
+
+        //calling the API
+        fetch(`https://api.openweathermap.org/data/3.0/onecall?lat=${latitude}&lon=${longitute}&exclude={part}&appid=${API_KEY}`)
     })
 }
