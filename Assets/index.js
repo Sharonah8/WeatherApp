@@ -48,6 +48,22 @@ function getWeatherData() {
     })
 }
 
+//get weather data from the json
 function showWatherData(data) {
-
+    let(humidity, pressure, sunrise, sunset, wind_speed) = data.current;
 }
+
+//fetch humidity, pressure, and windspeed from API
+currentWeatherItems.innerHTML =
+    `<div class="weather-item">
+        <div>Humidity</div>
+            <div>${humidity}</div>
+    </div>
+    <div class="weather-item">
+        <div>Pressure</div>
+        <div>${pressure}</div>
+    </div>
+    <div class="weather-item">
+        <div>Wind Speed</div>
+        <div>${wind_speed}</div>
+    </div>`;
